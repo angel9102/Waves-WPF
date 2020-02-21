@@ -1,0 +1,265 @@
+﻿<Window x:Class="Waves.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Waves"
+        mc:Ignorable="d"
+        Title="Waves" Height="800" Width="875" WindowStyle="None" WindowState="Maximized" >
+
+    <Grid Background="DarkGray">
+        <Grid.RowDefinitions>
+            <!-- Banner -->
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="65"/>
+            <!-- Seleccion de personaje -->
+            <RowDefinition Height="auto"/>
+            <!-- Seleccion de escenario -->
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <!-- Botones de inicio y salir -->
+            <RowDefinition Height="auto"/>
+            <!-- Updates -->
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="500" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <!-- Banner (metagrid) -->
+        <Grid Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="3">
+            <Grid.Background>
+                <ImageBrush ImageSource="Imagenes/logo.jpg"/>
+            </Grid.Background>
+            <TextBlock Text="WAVES" Foreground="White" TextAlignment="Center" Padding="10"
+                       FontSize="60" Margin="20" FontFamily="Algerian" Opacity="0.9"/>
+        </Grid>
+        
+        <!-- Silenciar musica -->
+        <Button Name="PararMusica" Grid.Column="0" Grid.Row="2" Opacity="0.7"
+                Width="40" Height="40" Margin="10" HorizontalAlignment="Left" VerticalAlignment="Top"  
+                Click="PararMusica_Click">
+            <Button.Content>
+                <Rectangle Width="30" Height="30">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Imagenes/musicon.png"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+            </Button.Content>
+        </Button>
+        
+        <!-- Seleccion de personaje -->
+        <TextBlock Text="SELECCIÓN DE PERSONAJE" HorizontalAlignment="Center" Padding="10" 
+                   Grid.Row="2" Grid.Column="1" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"
+                    Grid.Row="2" Grid.Column="1" Margin="20">
+            
+            <Button Name="Suiton" Margin="20 20" Cursor="Hand"
+                    ToolTipService.ShowDuration="20000" Click="Personaje_Click">
+                <Rectangle Width="60" Height="60">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Imagenes/personajes/1_Suiton.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Button.ToolTip>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Imagenes/personajes/1_Suiton.png" Height="150"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label FontWeight="Bold">Elemental de agua</Label>
+                            <Label>Ataque básico: Burbuja</Label>
+                            <Label>Ataque fuerte: Hidropulso</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </Button.ToolTip>
+            </Button>
+
+            <Button Name="Doton" Margin="20 20" Cursor="Hand"
+                    ToolTipService.ShowDuration="20000" Click="Personaje_Click">
+                <Rectangle Width="60" Height="60">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Imagenes/personajes/2_Doton.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Button.ToolTip>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Imagenes/personajes/2_Doton.png" Height="150"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label FontWeight="Bold">Elemental de planta</Label>
+                            <Label>Ataque básico: Hoja afilada</Label>
+                            <Label>Ataque fuerte: Rayo Solar</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </Button.ToolTip>
+            </Button>
+
+            <Button Name="Katon" Margin="20 20" Cursor="Hand"
+                    ToolTipService.ShowDuration="20000" Click="Personaje_Click">
+                <Rectangle Width="60" Height="60">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="Imagenes/personajes/3_Katon.png" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Button.ToolTip>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Imagenes/personajes/3_Katon.png" Height="150"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label FontWeight="Bold">Elemental de fuego</Label>
+                            <Label>Ataque básico: Ascua</Label>
+                            <Label>Ataque fuerte: Caos</Label>
+                        </StackPanel>
+                    </StackPanel>
+                </Button.ToolTip>
+            </Button>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="15">
+            <TextBlock Text="Suiton" Padding="40 0 0 5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBlock Text="Doton" Padding="70 0 0 5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+            <TextBlock Text="Katon" Padding="70 0 40 5" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        </StackPanel>
+
+        <!-- Seleccion de escenario -->
+        <TextBlock Text="SELECCIÓN DE ESCENARIO" HorizontalAlignment="Center" Margin="10" 
+                   Grid.Row="3" Grid.Column="1" />
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled"
+                      Grid.Row="4" Grid.Column="1" Background="LightGray">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10"
+                        Grid.Row="4" Grid.Column="1">
+
+                <Button Name="Cave" Margin="10 10" Cursor="Hand" Click="Escenario_Click">
+                    <Rectangle Width="120" Height="80">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Imagenes/escenarios/cave.jpg"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Button.ToolTip>
+                        <Image Source="Imagenes/escenarios/cave.jpg" Width="500"/>
+                    </Button.ToolTip>
+                </Button>
+
+                <Button Name="Desert" Margin="10 10" Cursor="Hand" Click="Escenario_Click">
+                    <Rectangle Width="120" Height="80">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Imagenes/escenarios/desert.jpg" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Button.ToolTip>
+                        <Image Source="Imagenes/escenarios/desert.jpg" Width="500"/>
+                    </Button.ToolTip>
+                </Button>
+
+                <Button Name="Forest" Margin="10 10" Cursor="Hand" Click="Escenario_Click">
+                    <Rectangle Width="120" Height="80">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Imagenes/escenarios/forest.jpg" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Button.ToolTip>
+                        <Image Source="Imagenes/escenarios/forest.jpg" Width="500"/>
+                    </Button.ToolTip>
+                </Button>
+
+                <Button Name="Hell" Margin="10 10" Cursor="Hand" Click="Escenario_Click">
+                    <Rectangle Width="120" Height="80">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Imagenes/escenarios/hell.jpg" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Button.ToolTip>
+                        <Image Source="Imagenes/escenarios/hell.jpg" Width="500"/>
+                    </Button.ToolTip>
+                </Button>
+
+                <Button Name="Japan" Margin="10 10" Cursor="Hand" Click="Escenario_Click">
+                    <Rectangle Width="120" Height="80">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Imagenes/escenarios/japan.jpg" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Button.ToolTip>
+                        <Image Source="Imagenes/escenarios/japan.jpg" Width="500"/>
+                    </Button.ToolTip>
+                </Button>
+
+                <Button Name="Mountain" Margin="10 10" Cursor="Hand" Click="Escenario_Click">
+                    <Rectangle Width="120" Height="80">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Imagenes/escenarios/mountain.jpg" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Button.ToolTip>
+                        <Image Source="Imagenes/escenarios/mountain.jpg" Width="500"/>
+                    </Button.ToolTip>
+                </Button>
+
+                <Button Name="Mystic" Margin="10 10" Cursor="Hand" Click="Escenario_Click">
+                    <Rectangle Width="120" Height="80">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="Imagenes/escenarios/mystic.jpg" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Button.ToolTip>
+                        <Image Source="Imagenes/escenarios/mystic.jpg" Width="500"/>
+                    </Button.ToolTip>
+                </Button>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Botones de inicio y salir -->
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="20"
+                    Grid.Row="5" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <Button Name="Start" Content="COMENZAR JUEGO" IsEnabled="False" Padding="5" 
+                        Margin="10 10" Cursor="Hand" Click="Start_Click"/>
+                <Button Name="Exit" Content="SALIR" Padding="5" Margin="10 10" Cursor="Hand"
+                        Click="Exit_Click"/>
+            </StackPanel>
+            <Label Name="LabelNuevaSeleccion" Content="Realice una nueva selección" FontStyle="Italic" 
+                   Foreground="Red" HorizontalAlignment="Center" Visibility="Hidden"/>
+        </StackPanel>
+
+        <!-- Panel de estadísticas -->
+        <DockPanel Name="panelEstadisticas" Margin="5" Grid.Row="2" Grid.Column="2" Grid.RowSpan="5" Visibility="Hidden">
+            <Border CornerRadius="5" Background="Black" BorderThickness="2" DockPanel.Dock="Top">
+                <StackPanel Background="WhiteSmoke" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="ESTADÍSTICAS DEL JUEGO" FontFamily="Algerian" FontSize="25" 
+                               Margin="10" HorizontalAlignment="Center"/>
+                    <Line X1="420" HorizontalAlignment="Center" Stroke="Black" StrokeThickness="2"/>
+                    <Label Name="labelOleada" Content="OLEADA: 1" HorizontalAlignment="Left" Background="LightGray" FontWeight="Bold" FontSize="15"/>
+                    <ListView Name="listaEstadisticas" Margin="30" HorizontalAlignment="Center">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="PERSONAJE" 
+                                    DisplayMemberBinding="{Binding TipoPersonaje}" Width="80"/>
+                                <GridViewColumn Header="NOMBRE" 
+                                    DisplayMemberBinding="{Binding Nombre}" Width="70"/>
+                                <GridViewColumn Header="ATAQUE 1" 
+                                    DisplayMemberBinding="{Binding PotenciaAtk1}" Width="70" />
+                                <GridViewColumn Header="ATAQUE 2" 
+                                    DisplayMemberBinding="{Binding PotenciaAtk2}" Width="70"/>
+                                <GridViewColumn Header="VIDA" 
+                                    DisplayMemberBinding="{Binding Vida}" Width="45"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <Label Name="labelTrucos" Content="BOTÓN MÁGICO" HorizontalAlignment="Left" Background="LightGray" FontWeight="Bold" FontSize="15"/>
+                    <TextBlock Text="El siguiente botón permite eliminar enemigos al seleccionarlos en la lista" Margin="5 10 5 0" TextAlignment="Center" />
+                    <TextBlock Text="superior. Será necesario emplear un turno y atacar a dicho enemigo" Margin="5 0 5 0" TextAlignment="Center"/>
+                    <TextBlock Text="con cualquiera de los ataques para que el botón tenga efecto" Margin="5 0 5 10" TextAlignment="Center"/>
+                    <Button Name="Magia" Content="ELIMINAR ENEMIGO" Width="130" Padding="5" Click="Magia_Click"/>
+                    <Label Name="labelConsejos" Content="CONSEJOS" Margin="0 15 0 10" HorizontalAlignment="Left" Background="LightGray" FontWeight="Bold" FontSize="15"/>
+                    <TextBlock Text="El elemental de agua obtiene un bonus de ataque contra el de fuego" TextAlignment="Center" />
+                    <TextBlock Text="El elemental de planta obtiene un bonus de ataque contra el de agua" TextAlignment="Center" />
+                    <TextBlock Text="El elemental de fuego obtiene un bonus de ataque contra el de planta" TextAlignment="Center" />
+                    <TextBlock Text="Los elementales obtienen cierta defensa contra el elemental opuesto," Margin="0 5 0 0" TextAlignment="Center" />
+                    <TextBlock Text="es decir, agua resiste fuego, planta resiste agua y fuego resiste planta"  TextAlignment="Center" />
+                    <Image Source="Imagenes/elementales.jpg" Width="120" Margin="10" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>
