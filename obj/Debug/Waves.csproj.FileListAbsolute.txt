@@ -1,0 +1,51 @@
+C:\Users\Angel\source\repos\Waves\bin\Debug\Waves.exe.config
+C:\Users\Angel\source\repos\Waves\bin\Debug\Waves.exe
+C:\Users\Angel\source\repos\Waves\bin\Debug\Waves.pdb
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves.csprojAssemblyReference.cache
+C:\Users\Angel\source\repos\Waves\obj\Debug\MainWindow.g.cs
+C:\Users\Angel\source\repos\Waves\obj\Debug\App.g.cs
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves_MarkupCompile.cache
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves_MarkupCompile.lref
+C:\Users\Angel\source\repos\Waves\obj\Debug\MainWindow.baml
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves.g.resources
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves.Properties.Resources.resources
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves.csproj.GenerateResource.cache
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves.exe
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves.pdb
+C:\Users\Angel\source\repos\Waves\obj\Debug\VentanaSecundaria.g.cs
+C:\Users\Angel\source\repos\Waves\obj\Debug\VentanaSecundaria.baml
+C:\Users\Angel\source\repos\Waves\obj\Debug\Waves_Content.g.cs
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\bin\Debug\Waves.exe.config
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\bin\Debug\Waves.exe
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\bin\Debug\Waves.pdb
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves.csprojAssemblyReference.cache
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\MainWindow.g.cs
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\VentanaSecundaria.g.cs
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\App.g.cs
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves_Content.g.cs
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves_MarkupCompile.cache
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves_MarkupCompile.lref
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\MainWindow.baml
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\VentanaSecundaria.baml
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves.g.resources
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves.Properties.Resources.resources
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves.csproj.GenerateResource.cache
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves.exe
+C:\Users\angel\OneDrive\Desktop\Waves - Aplicacion\Waves\obj\Debug\Waves.pdb
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\bin\Debug\Waves.exe.config
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\bin\Debug\Waves.exe
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\bin\Debug\Waves.pdb
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves.csprojAssemblyReference.cache
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\MainWindow.g.cs
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\VentanaSecundaria.g.cs
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\App.g.cs
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves_Content.g.cs
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves_MarkupCompile.cache
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves_MarkupCompile.lref
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\MainWindow.baml
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\VentanaSecundaria.baml
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves.g.resources
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves.Properties.Resources.resources
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves.csproj.GenerateResource.cache
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves.exe
+C:\Users\angel\OneDrive\Desktop\Grado\Waves\Waves - Aplicacion\Waves\obj\Debug\Waves.pdb
