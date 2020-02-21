@@ -1,7 +1,7 @@
 # Waves-WPF
 Videogame developed in WPF environment using C# and Visual Studio IDE
 
-This was my first videogame and it was a project for my Computer Engineering degree.
+This was my first videogame and it was a project for my Computer Engineering Bachelor.
 Although it works great, it has some architecture design issues. 
 Feel free to fix them and even add some more stuff.
 Hope you enjoy this short but challenging game! :)
