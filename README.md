@@ -2,7 +2,7 @@
 Videogame developed in WPF environment using C# and Visual Studio IDE
 
 This was my first videogame, it was a project for my Computer Engineering degree.
-Although it works great, it has some problems on the architecture. 
+Although it works great, it has some problems architecture problems. 
 Feel free to fix them and even add some more stuff.
 Hope you enjoy this short but challenging game! :)
 
